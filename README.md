@@ -11,5 +11,10 @@ For every flag identified correctly, they will earn points that they can use as 
 users who can correctly identify flags consecutively will have a **Streak** score which is used as a metric for a leaderboard
 system, giving further incentive for the users to keep attempting the game.
 
+### References:
+- Switch Icon: [Icon](https://www.flaticon.com/free-icon/off-button_5683501?term=switch&page=1&position=6&origin=tag&related_id=5683501)
+
 > [NOTE}
 > There will be a daily cap as to how many points a user can earn from playing
+
+
