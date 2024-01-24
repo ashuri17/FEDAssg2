@@ -18,7 +18,7 @@ function createFlags() {
         }
         console.log(countryFlags);
         randomCountry();
-    })
+    })   
 }
 
 function randomCountry(){
