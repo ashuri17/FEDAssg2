@@ -47,7 +47,7 @@ function displayOptions() {
 }
 
 // Add an event listener to each radio button for handling clicks
-document.querySelectorAll('.btn-check').forEach(radio => {
+document.querySelectorAll('.btn-primary').forEach(radio => {
     radio.addEventListener('click', () => checkAnswer(radio.value));
 });
 
