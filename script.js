@@ -17,12 +17,14 @@ function createFlags() {
             countryFlags[flagName] = flagImage;
         }
         console.log(countryFlags);
-        randomCountry();
+        
+        
     })   
 }
 
 function randomCountry(){
     let countryNames = Object.keys(countryFlags);
+    console.log(countryNames.length);
     const randomCountry = countryNames[Math.floor(Math.random() * countryNames.length)];
     const randomCountryFlag = countryFlags[randomCountry];
     document.getElementById("flagImage").src=randomCountryFlag;
