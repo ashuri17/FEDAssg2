@@ -2,6 +2,10 @@ const countryFlags = {}
 let answer;
 let streak = 0;
 let dailyScore = 0;
+document.getElementById("userStreak").textContent = streak;
+document.querySelector('form').addEventListener("click", function (e){
+    e.preventDefault();
+})
 function createFlags() {
     fetch("https://restcountries.com/v3.1/all")
     .then ((response) => {

@@ -1,0 +1,48 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: limegreen;
+}
+.btn-btn-primary {
+    background-color: rgba(52, 152, 219, 0.8); 
+    color: #fff; 
+    padding: 10px 40px; 
+    border: none;
+    border-radius: 10px;
+    cursor: pointer; 
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+}
+
+/* Hover effect */
+.btn-btn-primary:hover {
+    background-color: rgba(41, 128, 185, 0.8); 
+}
+
+.btn-btn-primary:focus {
+    outline: none;
+}
+
+.form-control-sm {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+/* Hover effect */
+.form-control-sm:hover {
+    border-color: #3498db; /* Border color on hover */
+}
+
+/* Focus state */
+.form-control-sm:focus {
+    border-color: #3498db; /* Border color on focus */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.8); /* Shadow effect on focus */
+}
+
