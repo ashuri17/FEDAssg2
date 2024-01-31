@@ -8,16 +8,16 @@
     <title>Flags</title>
 </head>
 <body>
-        <div id = "game">
+    <div id = "game">
         <img src = " " id = "flagImage" class = "img-fluid" style = "width:500px; height:300px; outline:1px solid black">
-    <form>
-            <div class = "form-group" id = "guess">
-            <label for= "country"id = "header">Guess the Flag</label><br>
-            <input type = "text" class = "form-control-sm" id = "country" placeholder = "eg. Singapore">
-            <button type = "submit" class = "btn btn-primary" id = "button">Submit</button>
+        <form>
+            <div class = "form-group" id="guess">
+                <input type = "text" class="form-control-sm" id= "userCountry" placeholder = "eg. Singapore">
+                <button type="button" class="btn btn-primary" onclick = "checkName()">Submit</button>
             </div>
         </div>
     </form>
+    <h1><span>Streak: </span><span id = "userStreak"></span></h1>
 
     <script src = "script.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

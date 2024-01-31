@@ -1,6 +1,7 @@
 const countryFlags = {}
-createFlags();
-
+let answer;
+let streak = 0;
+let dailyScore = 0;
 function createFlags() {
     fetch("https://restcountries.com/v3.1/all")
     .then ((response) => {
@@ -14,18 +15,34 @@ function createFlags() {
             let flagImage = data[i].flags.png;
             let flagName = data[i].name.common;
 
-            countryFlags[flagName] = flagImage;
+            countryFlags[flagImage] = flagName;
         }
-        console.log(countryFlags);
-        
-        
+        console.log(countryFlags);      
+        randomCountry()  
     })   
 }
 
 function randomCountry(){
-    let countryNames = Object.keys(countryFlags);
-    console.log(countryNames.length);
-    const randomCountry = countryNames[Math.floor(Math.random() * countryNames.length)];
-    const randomCountryFlag = countryFlags[randomCountry];
+    let countryKeys = Object.keys(countryFlags);
+    let randomCountryFlag = countryKeys[Math.floor(Math.random() * countryKeys.length)];
     document.getElementById("flagImage").src=randomCountryFlag;
+    answer = countryFlags[randomCountryFlag];
 }
+function checkName(){
+    let userInput = document.getElementById("userCountry").value;
+    if (userInput.toLowerCase() === "help"){
+        console.log(answer);
+    }
+    if (userInput.toLowerCase() === answer.toLowerCase()){
+        randomCountry();
+        streak++;
+        dailyScore += 10;
+        console.log(streak);
+        console.log(dailyScore);
+    }
+    document.getElementById("userCountry").value = "";
+    document.getElementById("userStreak").textContent = streak;
+}
+createFlags();
+
+
