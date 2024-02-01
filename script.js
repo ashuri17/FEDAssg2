@@ -32,6 +32,7 @@ function randomCountry(){
     let randomCountryFlag = countryKeys[Math.floor(Math.random() * countryKeys.length)];
     document.getElementById("flagImage").src=randomCountryFlag;
     answer = countryFlags[randomCountryFlag];
+    console.log(answer);
 }
 function checkName(){
     let userInput = document.getElementById("userCountry").value;
@@ -50,7 +51,9 @@ function checkName(){
             highestStreak = gameStreak;
         }
         const popupWindow = document.querySelector(".popup");
+        const fadedBg = document.querySelector("#faded-bg")
         popupWindow.style.display = 'flex';
+        fadedBg.style.display = 'block'
         document.getElementById("gameStreak").textContent = gameStreak;
         gameStreak = 0;
     }

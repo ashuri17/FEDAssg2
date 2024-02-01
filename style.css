@@ -59,18 +59,31 @@ body {
     background-color: #fff; /* Set the desired background color */
     padding: 20px; /* Adjust padding as needed */
     border: 1px solid #000; /* Optional: Add border for better visibility */
-    display:flex;
     align-items:center;
     justify-content: center;
-    z-index:1;  
+    z-index:100; 
     width:300px;
 }
 .inner-popup{
     background-color:white;
     padding:30px;
     text-align:center;
+    flex-wrap:wrap;
 }
 
 .return-home:hover{
     text-decoration: none;
+}
+#faded-bg{
+    display:none;
+    opacity:0.6;
+    background-color:black;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    z-index:2;
+    height:100%;
 }
