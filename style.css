@@ -3,6 +3,7 @@ body {
     font-weight: 400;
     font-style: normal;
     background-image: linear-gradient(to bottom, black 50%, limegreen 50%);
+    opacity:1;
 }
 .btn-btn-primary {
     background-color: rgba(52, 152, 219, 0.8); 
@@ -45,7 +46,7 @@ body {
 }
 .popup{
     visibility: visible;
-    
+    display:none;
 }
 .inner-popup{
     background-color: grey;

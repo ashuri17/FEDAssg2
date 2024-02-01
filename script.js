@@ -49,8 +49,9 @@ function checkName(){
         if (highestStreak < gameStreak){
             highestStreak = gameStreak;
         }
-        const popupWindow = document.querySelector("popup");
+        const popupWindow = document.querySelector(".popup");
         popupWindow.style.display = 'flex';
+        document.getElementById("gameStreak").textContent = gameStreak;
         gameStreak = 0;
     }
     document.getElementById("userCountry").value = "";
