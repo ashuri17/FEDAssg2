@@ -12,7 +12,7 @@
 </head>
 <body>
     <div id="game" class="container">
-        <div class="row justify-content-center" style ="margin-top: 100px;">
+        <div class="row justify-content-center" style ="margin-top: 220px;">
             <img src=" " id="flagImage" class="img-fluid" style="width:500px; height:300px; outline:1px solid black">
         </div>
     </div>
@@ -26,6 +26,13 @@
     </div>
     <div class="row justify-content-center" style ="margin-top: 100px; margin-right: 20px">
         <h1><span>Streak: </span><span id = "userStreak"></span></h1>
+    </div>
+    <div class = "popup">
+        <div class = "inner-popup">
+            <h3>You Lost!</h3>
+            <p><span>Streak:</span><span id = "gameStreak"></span></p>
+            <a id="return-home"href="index.html">Go back to homepage</a>
+        </div>
     </div>
 
     <script src = "script.js" defer></script>
