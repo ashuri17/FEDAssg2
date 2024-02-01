@@ -45,4 +45,15 @@ body {
     border-color: #3498db; /* Border color on focus */
     box-shadow: 0 0 5px rgba(52, 152, 219, 0.8); /* Shadow effect on focus */
 }
+.popup{
+    display:none;
+    align-items:center;
+    justify-content: center;
+    z-index:1;  
+}
+.inner-popup{
+    background-color:white;
+    padding:30px;
+    text-align:center;
+}
 

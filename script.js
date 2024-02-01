@@ -1,8 +1,9 @@
 const countryFlags = {}
 let answer;
-let streak = 0;
+let highestStreak = 0;
+let gameStreak = 0;
 let dailyScore = 0;
-document.getElementById("userStreak").textContent = streak;
+document.getElementById("userStreak").textContent = gameStreak;
 document.querySelector('form').addEventListener("click", function (e){
     e.preventDefault();
 })
@@ -39,12 +40,20 @@ function checkName(){
     }
     if (userInput.toLowerCase() === answer.toLowerCase()){
         randomCountry();
-        streak++;
+        gameStreak++;
         dailyScore += 10;
-        console.log(streak);
+        console.log(gameStreak);
         console.log(dailyScore);
     }
+    else{
+        if (highestStreak < gameStreak){
+            highestStreak = gameStreak;
+        }
+        const popupWindow = document.querySelector("popup");
+        popupWindow.style.display = 'flex';
+        gameStreak = 0;
+    }
     document.getElementById("userCountry").value = "";
-    document.getElementById("userStreak").textContent = streak;
+    document.getElementById("userStreak").textContent = gameStreak;
 }
 createFlags();
