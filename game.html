@@ -12,15 +12,21 @@
 </head>
 <body>
     <div id="game" class="container">
-        <div class="row justify-content-center" style ="margin-top: 220px;">
-            <img src=" " id="flagImage" class="img-fluid" style="width:500px; height:300px; outline:1px solid black">
+        <div class="row justify-content-center" style ="margin-top: 100px;">
+            <img src=" " id="flagImage" class="img-fluid" style="width:500px; height:300px; outline:3px solid white">
+        </div>
+    </div>
+    <div class = "popup">
+        <div class = "inner-popup">
+            <h3>You Lost!</h3>
+            <p><span>Streak:</span><span id = "gameStreak"></span></p>
         </div>
     </div>
     <div class="row justify-content-center" style ="margin-top: 100px;">
         <form>
             <div class = "form-group" id="guess" >
                 <input type = "text" class="form-control-sm" id= "userCountry" placeholder = "eg. Singapore">
-                <button type="button" class = "btn-btn-primary" onclick = "checkName()">Submit</button>
+                <button type="submit" class = "btn-btn-primary" id = "submit-btn" onclick = "checkName()">Submit</button>
             </div>
         </form>
     </div>
