@@ -59,5 +59,6 @@ function checkName(){
     }
     document.getElementById("userCountry").value = "";
     document.getElementById("userStreak").textContent = gameStreak;
+    document.getElementById("userDailyScore").textContent = dailyScore;
 }
 createFlags();
