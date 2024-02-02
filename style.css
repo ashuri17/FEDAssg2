@@ -7,12 +7,13 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-image: url('../FEDAssg2/Images/gradient-galaxy-background-with-colorful-planets_23-2148999259.avif');
+    background-image: url('../Images/gradient-galaxy-background-with-colorful-planets_23-2148999259.avif');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     height: 100vh;
     margin: 0;
+    overflow:hidden;
 }
 .btn-btn-primary {
     background-color: rgba(52, 152, 219, 0.8); 
