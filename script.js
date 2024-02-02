@@ -53,7 +53,7 @@ function checkName(){
         const popupWindow = document.querySelector(".popup");
         const fadedBg = document.querySelector("#faded-bg")
         popupWindow.style.display = 'flex';
-        fadedBg.style.display = 'block'
+        fadedBg.style.display = 'block';
         document.getElementById("gameStreak").textContent = gameStreak;
         gameStreak = 0;
     }

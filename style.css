@@ -1,9 +1,18 @@
+#streak-id{
+    color: #fff;
+}
+
+
 body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-image: linear-gradient(to bottom, black 50%, limegreen 50%);
-    opacity:1;
+    background-image: url('../FEDAssg2/Images/gradient-galaxy-background-with-colorful-planets_23-2148999259.avif');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
 }
 .btn-btn-primary {
     background-color: rgba(52, 152, 219, 0.8); 
@@ -49,26 +58,29 @@ body {
     display:none;
 }
 .inner-popup{
-    background-color: grey;
+    border-radius: 50px;
     visibility: visible;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 9999; /* Set a high z-index value to ensure it's on top */
-    background-color: #fff; /* Set the desired background color */
-    padding: 20px; /* Adjust padding as needed */
-    border: 1px solid #000; /* Optional: Add border for better visibility */
+    border: 1px solid #000; 
     align-items:center;
     justify-content: center;
     z-index:100; 
     width:300px;
-}
-.inner-popup{
     background-color:white;
-    padding:30px;
+    padding:35px;
     text-align:center;
     flex-wrap:wrap;
+}
+.inner-popup a{
+    color: black;
+    transition:font-size 0.2s ease-in-out;
+}
+.inner-popup a:hover{
+    text-decoration: none;
+    font-size: 1.2em;
 }
 
 .return-home:hover{
@@ -86,4 +98,5 @@ body {
     width:100%;
     z-index:2;
     height:100%;
+    transition: opacity 0.5s ease;
 }
