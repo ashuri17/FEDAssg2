@@ -1,9 +1,18 @@
+#streak-id{
+    color: #fff;
+}
+
+
 body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-image: linear-gradient(to bottom, black 50%, limegreen 50%);
-    opacity:1;
+    background-image: url('../FEDAssg2/Images/gradient-galaxy-background-with-colorful-planets_23-2148999259.avif');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
 }
 .btn-btn-primary {
     background-color: rgba(52, 152, 219, 0.8); 
@@ -67,11 +76,10 @@ body {
 }
 .inner-popup a{
     color: black;
-    transition: font-size 0.3s ease;
 }
 .inner-popup a:hover{
     text-decoration: none;
-    transition: ;
+    transition: ease-in-out;
     font-size: 1.2em;
 }
 
