@@ -153,7 +153,6 @@ body.index{
 }
 #index-title{
     display: flex;
-    padding-top: 15px;
     justify-content: center;
 }
 #index-title h1{
@@ -215,7 +214,7 @@ a.scrollable-container :hover{
     font-size: 60px;
     border: 5px solid #fff;
     border-radius: 25px;
-    padding: 25px;
+    padding: 15px;
     background-color: indigo;
     transition: transform 0.2s ease-in-out;
 }
@@ -223,8 +222,19 @@ a.scrollable-container :hover{
     text-decoration: none;
     font-size: 65px;
     border: 5px solid #fff;
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
+.social-bar {
+    background-color: black;
+    padding: 10px; /* Adjust the padding as needed */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
 
 /*leaderboard.html*/
 #leaderboard{
@@ -281,6 +291,23 @@ a.scrollable-container :hover{
         -webkit-text-stroke: black;
         -webkit-text-stroke-width:1;
     }
+
+
     /*index.html*/
+    #index-title h1{
+        margin-top: 40px;
+        font-size: 40px;
+    }
+    .index-buttons{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 15px;
+    }
+    .scrollable-container {
+        height: 250px;
+        width: 80vw;
+    }
 
 }
