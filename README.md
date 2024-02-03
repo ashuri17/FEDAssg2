@@ -13,7 +13,8 @@ system, giving further incentive for the users to keep attempting the game.
 
 ### References:
 - Switch Icon: [Icon](https://www.flaticon.com/free-icon/off-button_5683501?term=switch&page=1&position=6&origin=tag&related_id=5683501)
-
+- Background (index.html): https://www.wallpaperflare.com/static/829/209/298/adventure-time-cartoon-earth-digital-wallpaper.jpg
+- Background (game.html & leaderboard.html): https://img.freepik.com/free-vector/gradient-galaxy-background-with-colorful-planets_23-2148999259.jpg
 > [NOTE}
 > There will be a daily cap as to how many points a user can earn from playing
 
