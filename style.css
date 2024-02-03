@@ -32,6 +32,8 @@ body.game{
     margin-right: 250px;
     margin-left: 250px;
     font-size: 35px;
+    -webkit-text-stroke: black;
+    -webkit-text-stroke-width:1;
 }
 
 /* Hover effect */
@@ -224,6 +226,28 @@ a.scrollable-container :hover{
     transform: scale(1.05);
 }
 
+/*leaderboard.html*/
+#leaderboard{
+    display:flex;
+    border:4px solid white;
+    justify-content:center;
+    width:100%;
+    border-radius:10px;
+ }
+ #leaderboard-content{
+     font-size:20px;
+     color: #fff;
+ }
+ body.leaderboard-html{
+    background-image: url('../FEDAssg2/Images/gradient-galaxy-background-with-colorful-planets_23-2148999259.avif');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    overflow:hidden;
+ }
+
 
 @media only screen and (max-width: 767px) {
     /* Styles for phones */
@@ -254,7 +278,9 @@ a.scrollable-container :hover{
         margin-top: 50px;
         margin-right: 10px;
         margin-left: 10px;
+        -webkit-text-stroke: black;
+        -webkit-text-stroke-width:1;
     }
     /*index.html*/
-    
+
 }
