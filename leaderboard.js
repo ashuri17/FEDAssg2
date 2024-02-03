@@ -1,5 +1,5 @@
 
-var weeklyDate = new Date("Feb 10, 2024 00:00:00");
+var weeklyDate = new Date("Feb 10,2024,00:00:00");
 var x = setInterval(function(){
     var d = new Date().getTime();
     var distance = weeklyDate - d;
@@ -11,6 +11,7 @@ var x = setInterval(function(){
     
     document.getElementById("countDown").textContent = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
     if (distance < 0){
-        
+        clearInterval(x);
+        document.getElementById("countDown").textContent = "0d 0h 0m 0s";
     }
 },1000)
