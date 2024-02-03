@@ -172,7 +172,10 @@ body.index{
     margin-top: 25px;
     width: 30vw;
 }
-.scrollable-container :hover{
+a.scrollable-container{
+    text-decoration: none;
+}
+a.scrollable-container :hover{
     text-decoration: none;
 }
 
@@ -224,7 +227,8 @@ body.index{
 
 @media only screen and (max-width: 767px) {
     /* Styles for phones */
-    body {
+    /*game.html*/
+    .game {
         overflow: hidden;
     }
 
@@ -251,4 +255,6 @@ body.index{
         margin-right: 10px;
         margin-left: 10px;
     }
+    /*index.html*/
+    
 }
