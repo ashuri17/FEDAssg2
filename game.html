@@ -13,14 +13,15 @@
 <body>
     <div id="game" class="container">
         <div class="row justify-content-center" style ="margin-top: 100px;">
-            <img src=" " id="flagImage" class="img-fluid" style="width:500px; height:300px; outline:3px solid white">
+            <img src=" " id="flagImage" class="img-fluid" style="outline:3px solid white">
         </div>
     </div>
-    <div id = "faded-bg"></div>
     <div class = "popup">
+        <div id = "faded-bg"></div>
         <div class = "inner-popup">
             <h3>You Lost!</h3>
-            <p style ="margin-top:20px;"><span>Streak:</span><span id = "gameStreak"></span></p>
+            <p style ="margin-top:20px; margin-bottom: 30px;"><span>Streak:</span><span id = "gameStreak"></span></p>
+            <a href = game.html>Play again<br><br></a>
             <a href = index.html>Go back Home</a>
         </div>
     </div>
@@ -32,8 +33,9 @@
             </div>
         </form>
     </div>
-    <div class="row justify-content-center" style ="margin-top: 100px; margin-right: 20px">
-        <h1 id="streak-id"><span>Streak:</span><span id = "userStreak"></span></h1>
+    <div class="row justify-content-center">
+        <h1 id="streak-id" ><span>Streak:</span><span id = "userStreak"></span></h1>
+        <h1 id="streak-id"><span>Daily Score:</span><span id = "userDailyScore"></span><span>/100</span></h1>
     </div>
     <script src = "script.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

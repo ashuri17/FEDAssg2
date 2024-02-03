@@ -1,9 +1,13 @@
 #streak-id{
     color: #fff;
+    margin-top: 50px;
+    margin-right: 250px;
+    margin-left: 250px;
+    font-size: 35px;
 }
 
-
 body {
+    transition: ease-in 1s;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -13,6 +17,7 @@ body {
     background-repeat: no-repeat;
     height: 100vh;
     margin: 0;
+    overflow:hidden;
 }
 .btn-btn-primary {
     background-color: rgba(52, 152, 219, 0.8); 
@@ -46,12 +51,17 @@ body {
 }
 
 .form-control-sm:hover {
-    border-color: #3498db; /* Border color on hover */
+    border-color: #3498db; 
 }
 
 .form-control-sm:focus {
-    border-color: #3498db; /* Border color on focus */
-    box-shadow: 0 0 5px rgba(52, 152, 219, 0.8); /* Shadow effect on focus */
+    border-color: #3498db; 
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.8); 
+}
+.img-fluid{
+    margin-top: 50px;
+    width:25vw;
+    height:34vh;
 }
 .popup{
     visibility: visible;
@@ -75,11 +85,12 @@ body {
     flex-wrap:wrap;
 }
 .inner-popup a{
-    color: black;
+    color: #3498db;
 }
 .inner-popup a:hover{
     text-decoration: none;
-    transition: ease-in-out;
+    color: #3498db;
+    transition:font-size 0.2s ease-in-out;
     font-size: 1.2em;
 }
 
@@ -101,5 +112,37 @@ body {
     transition: opacity 0.5s ease;
 }
 
+
+@media only screen and (max-width: 767px) {
+    /* Styles for phones */
+    body {
+        overflow: hidden;
+    }
+
+    .img-fluid{
+        width: 65vw;
+        height: 25vh;
+    }
+
+    #submit-btn {
+        margin-top: 20px;
+        margin-left: 145px;
+    }
+
+    .form-control-sm {
+        /* Adjust form control styles for phones */
+        width: 80%;
+        margin-left: 45px;
+    }
+    .popup{
+        font-size: 7px;
+    }
+    #streak-id{
+        font-size: 25px;
+        margin-top: 50px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
 
 
