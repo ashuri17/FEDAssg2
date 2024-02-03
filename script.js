@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded",(event) => {
+    console.log("Document has fired up!");
+})
+
 const countryFlags = {}
 let answer;
 let highestStreak = 0;
