@@ -258,6 +258,129 @@ a.scrollable-container :hover{
     overflow:hidden;
  }
 
+ /*signin.html*/
+ body.signin{
+    background-image: url('../FEDAssg2/Images/signinpage-background.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    overflow:hidden;
+}
+#signin-buttons{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 37vw;
+    margin-top: 3vh;
+}
+.signin-control{
+    margin-top: 30px;
+    width: 400px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+#signin-header{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 130px;
+}
+#signin-header h1{
+    font-size: 80px;
+}
+#create-account{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 250px;
+}
+#create-account a{
+    text-decoration: underline;
+}
+#create-account a:hover{
+    color: #3498db;
+}
+#final-sign-in{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px
+}
+#final-sign-in a{
+    color: #fff;
+    font-size: 50px;
+    border: 3px solid #ddd;
+    border-radius: 50%;
+    padding: 30px;
+    transition: transform 0.2s ease-in-out;
+    background-color:#4B0082;
+}
+#final-sign-in a:hover{
+    text-decoration: none;
+    font-size: 1;
+    transform: scale(1.03);
+}
+
+/*create.html*/
+body.create{
+    background-image: url('../FEDAssg2/Images/signinpage-background.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    overflow:hidden;
+}
+#create-header{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+#create-header h1{
+    font-size: 70px;
+}
+.create-control{
+    margin-top: 30px;
+    width: 400px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+#final-create{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px
+}
+#final-create a{
+    color: #fff;
+    font-size: 50px;
+    border: 3px solid #ddd;
+    border-radius: 50%;
+    padding: 30px;
+    transition: transform 0.2s ease-in-out;
+    background-color:#4B0082;
+}
+#final-create a:hover{
+    text-decoration: none;
+    font-size: 1;
+    transform: scale(1.03);
+}
+
+
 
 @media only screen and (max-width: 767px) {
     /* Styles for phones */
