@@ -1,13 +1,14 @@
 document.addEventListener("DOMContentLoaded",(event) => {
     console.log("Document has fired up!");
 })
-
+const APIKEY = "65bf3321b4ef994fc436669e";	
 const countryFlags = {}
 let answer;
 let highestStreak = 0;
 let gameStreak = 0;
 let dailyScore = 0;
 document.getElementById("userStreak").textContent = gameStreak;
+document.getElementById("userDailyScore").textContent = dailyScore;
 document.querySelector('form').addEventListener("click", function (e){
     e.preventDefault();
 })
@@ -17,7 +18,9 @@ function createFlags() {
         if (!response.ok){
             throw new Error("Something went wrong...");
         }
-        return response.json();
+        else{
+            return response.json();
+        }
     })
     .then ((data) => {
         for (let i = 0; i < data.length; i++){
