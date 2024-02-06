@@ -200,8 +200,8 @@ a.scrollable-container :hover{
 }
 .scroll-content h2{
     color: #fff;
-    margin-top: 15px;
-    margin-left: 40px;
+    margin-top: 15px    ;
+    margin-left: auto;
 }
 #play-now{
     display: flex;
