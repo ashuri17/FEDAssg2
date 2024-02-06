@@ -24,6 +24,9 @@ document.addEventListener("DOMContentLoaded", function () {
             } 
             else {
                 alert("Invalid credentials!")
+                document.getElementById("sign-username").value = "";
+                document.getElementById("sign-password").value = "";
+
             }
         }
 
@@ -53,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     checkValidity(attemptUsername, attemptPassword);
                 })
                 .catch((error) => {
-                    console.error("Error fetching data:", error);
+                    console.error("Error:", error);
                 });
         }
     })
