@@ -180,6 +180,9 @@ body.index{
     padding-right: 100px;
     padding-top: 50px;
 }
+.index-buttons h2{
+    color:#fff;
+}
 .index-buttons a{
     padding: 12px 20px;
     border-radius: 25px;
@@ -723,6 +726,10 @@ body.shop-html{
         margin-left: 60px;
     }
     #shop-item4 h3{
+        font-size: 20px;
+    }
+    .index-buttons h2{
+        padding-top: 15px;
         font-size: 20px;
     }
 }

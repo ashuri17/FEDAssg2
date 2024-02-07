@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded",function(){
                 let highestStreak = data[i].highestStreak;
                 leaderboardRows[userName] = highestStreak;
             }
-            leaderboardRows.sort((a, b) => b.highestStreak - a.highestStreak);
+            let sortedLeaderboard = leaderboardRows.slice().sort((a, b) => b.highestStreak - a.highestStreak);
             console.log(leaderboardRows);
         })
     }

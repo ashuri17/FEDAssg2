@@ -1,11 +1,12 @@
 const APIKEY = "65bf3321b4ef994fc436669e";
-getLeaderboard();
 
 document.addEventListener("DOMContentLoaded",function(){
     var userName = localStorage.getItem("userNameKey");
     console.log(userName);
     document.getElementById("display-username").textContent = userName;
     usernameHighestStreak = {};
+    getLeaderboard();
+
 })
 function getLeaderboard(){
     let settings = {

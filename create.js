@@ -12,6 +12,11 @@ document.addEventListener("DOMContentLoaded",function(){
             document.getElementById("create-password").value = "";
         }
         else{
+            let today = new Date("01/01/2024");
+            var year = today.getFullYear();
+            var month = ('0' + (today.getMonth()+1)).slice(-2);
+            var days = ('0' + today.getDate()).slice(-2);
+            formattedDate = days + '/' + month + '/' + year;
             let userData = {
                 "userName": userName,
                 "userEmail": email,
@@ -19,6 +24,8 @@ document.addEventListener("DOMContentLoaded",function(){
                 "highestStreak": 0,
                 "dailyScore": 0,
                 "totalScore": 0,
+                "differenceDaily": 0,
+                "date": formattedDate
             }
             localStorage.setItem("userNameKey",userName);
             let settings = {
