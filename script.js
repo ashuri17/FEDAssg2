@@ -12,7 +12,7 @@ let totalScore;
 let userDate;
 let userID;
 
-let now = new Date().toLocaleDateString('en-GB') //for resetting of dailyScore and differenceDaily values
+let now = new Date().toLocaleDateString(); //for resetting of dailyScore and differenceDaily values
 document.getElementById("userStreak").textContent = gameStreak;
 document.querySelector('form').addEventListener("click", function (e){ //disable form default
     e.preventDefault();
@@ -67,7 +67,7 @@ function checkName(){
             var month = ('0' + (today.getMonth()+1)).slice(-2);
             console.log(month);
             var days = ('0' + today.getDate()).slice(-2);
-            userDate = days + '/' + month + '/' + year;
+            userDate = month + '/' + days + '/' + year;
         }
 
     }
@@ -116,7 +116,10 @@ function getPlayer(){
         }
     })
     .then ((data) =>{
-        if (data[0].userDate === now){
+        userDate = data[0].date;
+        let checkUserDate = new Date(userDate).toDateString();
+        let nowDate = new Date(now).toDateString();
+        if (checkUserDate !== nowDate){
             dailyScore = 0
             differenceDaily = 0
         }
@@ -124,6 +127,7 @@ function getPlayer(){
             dailyScore = data[0].dailyScore;
             differenceDaily = data[0].differenceDaily;
         }
+
         highestStreak = data[0].highestStreak;
         totalScore = data[0].totalScore;
         userID = data[0]._id;
