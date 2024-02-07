@@ -20,6 +20,7 @@ system, giving further incentive for the users to keep attempting the game.
 - Google gift card: [https://cardzstore.com/content/images/370944ad-5d83-4ed5-9789-fe3937d89bc3.jpg](https://www.google.com/url?sa=i&url=https%3A%2F%2Fcardzstore.com%2Fen%2Fgoogle-play-us%2Fproduct%2F1085%2Fgoogle-play-gift-card-15-us-store&psig=AOvVaw21niS_vSL_rBopSFTsFHcY&ust=1707365765726000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCPD678KvmIQDFQAAAAAdAAAAABAN)
 - Apple gift card: [https://i0.wp.com/www.cheapgamesng.com/wp-content/uploads/2020/07/Apple-Store-iTunes-Gift-Card-3.jpg?fit=1500%2C1500&ssl=1](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cheapgamesng.com%2Fproduct%2Fbuy-15-itunes-gift-card%2F&psig=AOvVaw3sDm-kOSkC2bq7h0trUyTu&ust=1707365314782000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCKD8j_GumIQDFQAAAAAdAAAAABAE)
 - Spotify gift card: [https://www.thewarehouse.co.nz/on/demandware.static/-/Sites-twl-master-catalog/default/dwf4ae969a/images/hi-res/1C/D7/R2512812_40.jpg](https://www.thewarehouse.co.nz/p/spotify-15-gift-card/R2512812.html)
+- Starbucks gift card: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.walmart.com%2Fip%2FStarbucks-15-Gift-Card%2F49226317&psig=AOvVaw3oGWSrQ8VUTqUeBrHWTM6r&ust=1707366608291000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCPik-7WymIQDFQAAAAAdAAAAABAE
 > [NOTE}
 > There will be a daily cap as to how many points a user can earn from playing
 
