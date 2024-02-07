@@ -68,7 +68,7 @@ function checkout(){
         return;
     }
     totalScore -= 10;
-
+    document.getElementById("userTotalScore").textContent = totalScore;
     let playerData = {
         "totalScore": totalScore,
     }
@@ -93,6 +93,5 @@ function checkout(){
     .then ((data) =>{
         console.log(data);
     })
-    getPlayer();
 }
 getPlayer();
