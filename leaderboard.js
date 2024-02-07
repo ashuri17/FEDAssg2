@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded",function(){
     const APIKEY = "65bf3321b4ef994fc436669e";
-    leaderboardRows = {};
     var weeklyDate = new Date("Feb 3,2024,23:36:20");
+
+
     var x = setInterval(function(){
     var d = new Date().getTime();
     var distance = weeklyDate - d;
@@ -15,47 +16,51 @@ document.addEventListener("DOMContentLoaded",function(){
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
     document.getElementById("countDown").textContent = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-    createLeaderboard();
-    getLeaderboard();
 
-    
-    function createLeaderboard(){
-        let settings = {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json",
-                "x-apikey": APIKEY,
-                "Cache-Control": "no-cache"    
-            },
-        }
-        fetch("https://fedassg2-7a05.restdb.io/rest/user-fed",settings)
-        .then((response)=>{
-            if (!response.ok){
-                throw new Error("Something went wrong...");
-            }
-            else{
-                return response.json();
-            }
-        })
-        .then ((data) =>{
-            for (var i = 0; i < data.length;i++){
-                let userName = data[i].userName
-                let highestStreak = data[i].highestStreak;
-                leaderboardRows[userName] = highestStreak;
-            }
-            let sortedLeaderboard = leaderboardRows.slice().sort((a, b) => b.highestStreak - a.highestStreak);
-            console.log(leaderboardRows);
-        })
-    }
-    function getLeaderboard(limit = 20){
-        let rows = "";
-        for (var i = 0; i < leaderboardRows.length && i < limit; i++){
-            rows = `${rows}<tr>
-            <td>${i+1}</td>
-            <td>${leaderboardRows.userName}</td>
-            <td>${leaderboardRows.highestStreak}</td></tr>`
-        }
-        document.getElementById("leaderboard-content").getElementsByTagName("tbody")[0].innerHTML = rows;
-    }
 },1000)
+leaderboardRows = {};
+
+
+createLeaderboard();
+function createLeaderboard(){
+    let settings = {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+            "x-apikey": APIKEY,
+            "Cache-Control": "no-cache"    
+        },
+    }
+    fetch("https://fedassg2-7a05.restdb.io/rest/user-fed",settings)
+    .then((response)=>{
+        if (!response.ok){
+            throw new Error("Something went wrong...");
+        }
+        else{
+            return response.json();
+        }
+    })
+    .then ((data) =>{
+        for (var i = 0; i < data.length;i++){
+            let userName = data[i].userName
+            let highestStreak = data[i].highestStreak;
+            leaderboardRows[userName] = highestStreak;
+        }
+        getLeaderboard();
+
+    })
+}
+function getLeaderboard(limit = 20, all = true){
+    let rows = "";
+    let sortedUsernames = Object.keys(leaderboardRows).sort((a, b) => leaderboardRows[b] - leaderboardRows[a]);
+    for (var i = 0; i < sortedUsernames.length && i < limit; i++){
+        let userName = sortedUsernames[i];
+        let highestStreak = leaderboardRows[userName];
+        rows = `${rows}<tr>
+        <td>${i+1}</td>
+        <td>${userName}</td>
+        <td>${highestStreak}</td></tr>`
+    }
+    document.getElementById("leaderboard-content").getElementsByTagName("tbody")[0].innerHTML = rows;
+}
 })
