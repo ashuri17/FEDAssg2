@@ -468,6 +468,7 @@ body.shop-html{
 #shop-header h1{
     color: #fff;
     font-size: 80px;
+    padding-bottom: 50px;
 }
 .shop-items{
     margin-right: 50px;
@@ -496,9 +497,12 @@ body.shop-html{
     width: 200px;
     margin-left: 80px;
 }
+#shop-item3{
+    margin-left: 250px;
+}
 #shop-item3 img{
     width: 200px;
-    margin-left: 80px;
+    margin-left: 50px;
 }
 #popup1 h1{
     font-size: 30px;
@@ -529,8 +533,16 @@ body.shop-html{
     width: 200px;
 }
 #shop-item4{
-    margin-left: 300px;
+    margin-left: 280px;
 }
+#lottiebg{
+    justify-content: center;
+    align-items: center;
+    padding-left: 625px;
+    padding-top: 220px;
+}
+
+
 @media only screen and (max-width: 767px) {
     /* Styles for phones */
     /*game.html*/

@@ -46,3 +46,12 @@ function miniLeaderboard(limit = 3){
         $("#mini-leaderboard").append(row);
     }
 }
+
+function redirectToPlayPage() { 
+    if (window.location.pathname.endsWith('loading.html')) { 
+        setTimeout(function() { 
+            window.location.href = 'game.html'; 
+        }, 5000); 
+    } 
+} 
+redirectToPlayPage();
