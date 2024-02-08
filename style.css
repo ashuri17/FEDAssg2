@@ -593,7 +593,16 @@ body.shop-html{
         height: 250px;
         width: 80vw;
     }
-
+    .scroll-content h1{
+        margin-right: 15px;
+    }
+    #play-now a{
+        font-size: 45px;
+        transition: font-size 0.2s ease-in;
+    }
+    #play-now a:hover{
+        font-size: 55px;
+    }
     /*leaderboard.html*/
     .back-button{
         padding-left: 40px;
@@ -743,5 +752,9 @@ body.shop-html{
     .index-buttons h2{
         padding-top: 15px;
         font-size: 20px;
+    }
+    /*lottie*/
+    #lottiebg{
+        padding-left: 0;
     }
 }
