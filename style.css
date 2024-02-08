@@ -6,7 +6,7 @@ body {
     font-style: normal;
 }
 body.game{
-    background-image: url('../FEDAssg2/Images/gradient-galaxy-background-with-colorful-planets_23-2148999259.avif');
+    background-image: url('../Images/gradient-galaxy-background-with-colorful-planets_23-2148999259.avif');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -26,7 +26,7 @@ body.game{
     transition: background-color 0.3s;
     margin-left: 10px;
 }
-#streak-id{
+.streak-id{
     color: #fff;
     margin-top: 50px;
     margin-right: 250px;
@@ -89,8 +89,9 @@ body.game{
     text-align:center;
     flex-wrap:wrap;
 }
-.inner-popup a{
+.lost-button{
     color: #3498db;
+    pointer-events: none;
 }
 .inner-popup a:hover{
     text-decoration: none;
@@ -165,7 +166,7 @@ body.game{
 /*homepage.html css (most of it)*/
 
 body.index{
-    background-image: url('../FEDAssg2/Images/adventure-time-cartoon-earth-digital-wallpaper.jpg');
+    background-image: url('../Images/adventure-time-cartoon-earth-digital-wallpaper.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -229,7 +230,7 @@ a.scrollable-container :hover{
 .scroll-content {
     overflow-y: scroll;
     height: calc(100% + 17px); /* Offset the scrollbar width */
-    margin-right: -17px; /* Offset the scrollbar width */
+    margin-right: -17px; /* Offset the scrollbar width*/
 }
 
 .scroll-content::-webkit-scrollbar {
@@ -241,13 +242,14 @@ a.scrollable-container :hover{
 }
 
 .scroll-content h1{
+    text-align:center;
     margin-top: 25px;
     color:#fff;
 }
 .scroll-content h2{
     color: #fff;
     margin-top: 15px;
-    margin-left: 40px;
+    text-align:center;
 }
 #play-now{
     display: flex;
@@ -295,7 +297,7 @@ a.scrollable-container :hover{
      color: #fff;
  }
  body.leaderboard-html{
-    background-image: url('../FEDAssg2/Images/gradient-galaxy-background-with-colorful-planets_23-2148999259.avif');
+    background-image: url('../Images/gradient-galaxy-background-with-colorful-planets_23-2148999259.avif');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -332,7 +334,7 @@ a.scrollable-container :hover{
     border-radius: 20%; /* Optional: Rounded corners */
   }
  body.signin{
-    background-image: url('../FEDAssg2/Images/signinpage-background.jpg');
+    background-image: url('../Images/signinpage-background.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -397,13 +399,12 @@ a.scrollable-container :hover{
 }
 #final-sign-in a:hover{
     text-decoration: none;
-    font-size: 1;
     transform: scale(1.03);
 }
 
 /*create.html*/
 body.create{
-    background-image: url('../FEDAssg2/Images/signinpage-background.jpg');
+    background-image: url('../Images/signinpage-background.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -448,12 +449,11 @@ body.create{
 }
 #final-create a:hover{
     text-decoration: none;
-    font-size: 1;
     transform: scale(1.03);
 }
 /*shop.html*/
 body.shop-html{
-    background-image: url('../FEDAssg2/Images/pngtree-cartoon-space-landscape-comic-planet-picture-image_1823156.jpg');
+    background-image: url('../Images/pngtree-cartoon-space-landscape-comic-planet-picture-image_1823156.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -567,7 +567,7 @@ body.shop-html{
     .popup{
         font-size: 7px;
     }
-    #streak-id{
+    .streak-id{
         font-size: 25px;
         margin-top: 50px;
         margin-right: 10px;
@@ -578,9 +578,7 @@ body.shop-html{
     .inner-popup p{
         font-size: 15px;
     }
-    .inner-popup p:hover{
-        font-size: 20px;
-    }
+
     .inner-popup a{
         font-size: 12px;
     }
@@ -605,6 +603,11 @@ body.shop-html{
     }
     .scroll-content h1{
         margin-right: 15px;
+        font-size: 30px;
+    }
+    .scroll-content h2{
+        margin-right: 15px;
+        font-size: 25px;
     }
     #play-now a{
         font-size: 45px;
@@ -628,7 +631,7 @@ body.shop-html{
         width: 350px;
     }
     #signin-header{
-        margin-top: 130x;
+        margin-top: 130px;
     }
     #signin-header h1{
         font-size: 40px;

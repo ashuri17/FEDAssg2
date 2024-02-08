@@ -37,7 +37,7 @@ document.getElementById('faded-bg4').addEventListener('click', function() {
 });
 
 
-// get player's stats from DB
+// get user's totalScore from DB
 function getPlayer(){
     let settings = {
         method: "GET",
@@ -46,7 +46,7 @@ function getPlayer(){
             "x-apikey": APIKEY,
             "Cache-Control": "no-cache"
         },
-    }
+    };
     fetch(`https://fedass2-63de.restdb.io/rest/user-info?q={"userName":"${playerName}"}`,settings)
     .then((response)=>{
         if (!response.ok){
@@ -57,12 +57,12 @@ function getPlayer(){
         }
     })
     .then ((data) =>{
-        userID = data[0]._id;
+        userID = data[0]._id; //necessary for checkout();
         totalScore = data[0].totalScore;
         document.getElementById("userTotalScore").textContent = totalScore;
-    })
+    });
 }
-// Update player stats
+// Update user stats
 function checkout(){
     if (totalScore < 10) {
         alert("Insufficient Points!");
@@ -72,7 +72,7 @@ function checkout(){
     document.getElementById("userTotalScore").textContent = totalScore;
     let playerData = {
         "totalScore": totalScore,
-    }
+    };
     let settings = {
         method: "PUT",
         headers: {
@@ -81,7 +81,7 @@ function checkout(){
             "Cache-Control": "no-cache"
         },
         body: JSON.stringify(playerData)
-    }
+    };
     fetch(`https://fedass2-63de.restdb.io/rest/user-info/${userID}`,settings)
     .then((response)=>{
         if (!response.ok){
@@ -94,6 +94,6 @@ function checkout(){
     .then ((data) =>{
         console.log(data);
         window.location.href = "shop.html";
-    })
+    });
 }
 getPlayer();

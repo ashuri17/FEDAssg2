@@ -1,5 +1,5 @@
-document.addEventListener("DOMContentLoaded",function(){
-    const APIKEY = "65c462bccca7362a2c653d5c"
+document.addEventListener("DOMContentLoaded", function () {
+    const APIKEY = "65c462bccca7362a2c653d5c";
     document.getElementById("final-create").addEventListener("click", function(e){
         e.preventDefault();
         let userName = document.getElementById("create-username").value;
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded",function(){
             var year = today.getFullYear();
             var month = ('0' + (today.getMonth()+1)).slice(-2);
             var days = ('0' + today.getDate()).slice(-2);
-            formattedDate = days + '/' + month + '/' + year;
+            let formattedDate = days + '/' + month + '/' + year;
             let userData = {
                 "userName": userName,
                 "userEmail": email,
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded",function(){
                 "totalScore": 0,
                 "differenceDaily": 0,
                 "date": formattedDate
-            }
+            };
             localStorage.setItem("userNameKey",userName);
             let settings = {
                 method: "POST",
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded",function(){
                     "Cache-Control": "no-cache"
                 },
                 body: JSON.stringify(userData),
-            }
+            };
             fetch("https://fedass2-63de.restdb.io/rest/user-info",settings)
             .then((response)=>{
                 if (!response.ok){
@@ -52,11 +52,11 @@ document.addEventListener("DOMContentLoaded",function(){
             })
             .then ((data) =>{
                 console.log(data);
-                window.location.href = "homepage.html"
+                window.location.href = "homepage.html";
             })
             .catch((error) => {
                 console.error("Error fetching data:", error);
             });
         } 
-    })
-})
+    });
+});
