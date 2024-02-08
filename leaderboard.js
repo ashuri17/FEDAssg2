@@ -1,4 +1,4 @@
-const APIKEY = "65c42c7286354f09ac464716";
+const APIKEY = "65c462bccca7362a2c653d5c";
 document.addEventListener("DOMContentLoaded",function(){
 
 leaderboardRows = {};
@@ -13,7 +13,7 @@ function createLeaderboard(){
             "Cache-Control": "no-cache"    
         },
     }
-    fetch("https://fedass2-0db0.restdb.io/rest/user-info",settings)
+    fetch("https://fedass2-63de.restdb.io/rest/user-info",settings)
     .then((response)=>{
         if (!response.ok){
             throw new Error("Something went wrong...");

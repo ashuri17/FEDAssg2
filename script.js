@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded",(event) => {
     console.log("Document has fired up!");
 })
-const APIKEY = "65c42c7286354f09ac464716";	
+const APIKEY = "65c462bccca7362a2c653d5c";	
 const countryFlags = {}
 let answer;                         
 let highestStreak;                  
@@ -107,7 +107,7 @@ function getPlayer(){
             "Cache-Control": "no-cache"
         },
     }
-    fetch(`https://fedass2-0db0.restdb.io/rest/user-info?q={"userName":"${playerName}"}`,settings)
+    fetch(`https://fedass2-63de.restdb.io/rest/user-info?q={"userName":"${playerName}"}`,settings)
     .then((response)=>{
         if (!response.ok){
             throw new Error("Something went wrong...");
@@ -153,7 +153,7 @@ function updatePlayer(){
         },
         body: JSON.stringify(playerData)
     }
-    fetch(`https://fedass2-0db0.restdb.io/rest/user-info/${userID}`,settings)
+    fetch(`https://fedass2-63de.restdb.io/rest/user-info/${userID}`,settings)
     .then((response)=>{
         if (!response.ok){
             throw new Error("Something went wrong...");
