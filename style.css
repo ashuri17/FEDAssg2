@@ -1,0 +1,771 @@
+
+body {
+    transition: ease-in 1s;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body.game{
+    background-image: url('../FEDAssg2/Images/gradient-galaxy-background-with-colorful-planets_23-2148999259.avif');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    overflow:hidden;
+}
+/* game.html css (most of it0*/
+.btn-btn-primary {
+    background-color: rgba(52, 152, 219, 0.8); 
+    color: #fff; 
+    padding: 10px 40px; 
+    border: none;
+    border-radius: 10px;
+    cursor: pointer; 
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+}
+#streak-id{
+    color: #fff;
+    margin-top: 50px;
+    margin-right: 250px;
+    margin-left: 250px;
+    font-size: 35px;
+    -webkit-text-stroke: black;
+    -webkit-text-stroke-width:1;
+}
+
+/* Hover effect */
+.btn-btn-primary:hover {
+    background-color: rgba(41, 128, 185, 0.8); 
+}
+
+.btn-btn-primary:focus {
+    outline: none;
+}
+
+.form-control-sm {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-control-sm:hover {
+    border-color: #3498db; 
+}
+
+.form-control-sm:focus {
+    border-color: #3498db; 
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.8); 
+}
+.img-fluid{
+    margin-top: 50px;
+    width:25vw;
+    height:34vh;
+}
+.popup{
+    visibility: visible;
+    display:none;
+}
+.inner-popup{
+    border-radius: 50px;
+    visibility: visible;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #000; 
+    align-items:center;
+    justify-content: center;
+    z-index:100; 
+    width:300px;
+    background-color:white;
+    padding:35px;
+    text-align:center;
+    flex-wrap:wrap;
+}
+.inner-popup a{
+    color: #3498db;
+}
+.inner-popup a:hover{
+    text-decoration: none;
+    color: #3498db;
+    transition:font-size 0.2s ease-in-out;
+    font-size: 1.2em;
+}
+
+.return-home:hover{
+    text-decoration: none;
+}
+#faded-bg{
+    display:none;
+    opacity:0.6;
+    background-color:black;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    z-index:2;
+    height:100%;
+    transition: opacity 0.5s ease;
+}
+#faded-bg2{
+    display:none;
+    opacity:0.6;
+    background-color:black;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    z-index:2;
+    height:100%;
+    transition: opacity 0.5s ease;
+}
+#faded-bg3{
+    display:none;
+    opacity:0.6;
+    background-color:black;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    z-index:2;
+    height:100%;
+    transition: opacity 0.5s ease;
+}
+#faded-bg4{
+    display:none;
+    opacity:0.6;
+    background-color:black;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    z-index:2;
+    height:100%;
+    transition: opacity 0.5s ease;
+}
+
+
+
+
+/*homepage.html css (most of it)*/
+
+body.index{
+    background-image: url('../FEDAssg2/Images/adventure-time-cartoon-earth-digital-wallpaper.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    overflow:hidden;
+}
+.index-buttons{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+}
+.index-buttons h2{
+    color:#fff;
+}
+.index-buttons a{
+    padding: 12px 20px;
+    border-radius: 25px;
+    color: #fff;
+    background: linear-gradient(to bottom, #4B0082, #800080);
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out;
+    border: 2px solid #fff;
+}
+.index-buttons a:hover{
+    text-decoration: none;
+    color: #fff;
+    transform: scale(1.2)
+}
+#index-title{
+    display: flex;
+    justify-content: center;
+}
+#index-title h1{
+    color: #fff;
+    font-size: 70px;
+}
+.scrollable-container {
+    background: linear-gradient(to bottom, #4B0082, #800080);
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    border: 5px solid #fff;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 25px;
+    width: 30vw;
+}
+a.scrollable-container{
+    text-decoration: none;
+}
+a.scrollable-container :hover{
+    text-decoration: none;
+}
+
+.scroll-content {
+    overflow-y: scroll;
+    height: calc(100% + 17px); /* Offset the scrollbar width */
+    margin-right: -17px; /* Offset the scrollbar width */
+}
+
+.scroll-content::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar width */
+}
+
+.scroll-content::-webkit-scrollbar-thumb {
+    display: none; /* Hide scrollbar thumb */
+}
+
+.scroll-content h1{
+    margin-top: 25px;
+    color:#fff;
+}
+.scroll-content h2{
+    color: #fff;
+    margin-top: 15px;
+    margin-left: 40px;
+}
+#play-now{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+#play-now a{
+    color: #fff;
+    font-size: 60px;
+    border: 5px solid #fff;
+    border-radius: 25px;
+    padding: 15px;
+    background-color: indigo;
+    transition: transform 0.2s ease-in-out;
+}
+#play-now a:hover{
+    text-decoration: none;
+    font-size: 65px;
+    border: 5px solid #fff;
+    transform: scale(1.03);
+}
+.social-bar {
+    background-color: black;
+    padding: 10px; /* Adjust the padding as needed */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+/*leaderboard.html*/
+#leaderboard{
+    display:flex;
+    border:4px solid white;
+    justify-content:center;
+    width:100%;
+    border-radius:10px;
+ }
+ #leaderboard-content{
+     font-size:20px;
+     color: #fff;
+ }
+ body.leaderboard-html{
+    background-image: url('../FEDAssg2/Images/gradient-galaxy-background-with-colorful-planets_23-2148999259.avif');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    overflow:hidden;
+ }
+ .back-button{
+    padding-left: 100px;
+    padding-top: 50px;
+}
+.back-button a{
+    padding: 12px 20px;
+    border-radius: 25px;
+    color: #fff;
+    background: linear-gradient(to bottom, #4B0082, #800080);
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out;
+    border: 2px solid #fff;
+}
+.back-button a:hover{
+    text-decoration: none;
+    color: #fff;
+    transform: scale(1.1)
+}
+
+ /*index.html*/
+
+ #signin-border {
+    width: 600px;
+    margin: 50px auto; /* Adjust margin based on your layout */
+    padding: 20px;
+    border: 2px solid #ccc; /* Border color */
+    border-radius: 20%; /* Optional: Rounded corners */
+  }
+ body.signin{
+    background-image: url('../FEDAssg2/Images/signinpage-background.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    overflow:hidden;
+}
+#signin-buttons{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 37vw;
+    margin-top: 3vh;
+}
+.signin-control{
+    margin-top: 30px;
+    width: 400px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+#signin-header{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+#signin-header h1{
+    font-size: 80px;
+}
+#create-account{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 250px;
+}
+#create-account a{
+    text-decoration: underline;
+}
+#create-account a:hover{
+    color: #3498db;
+}
+#final-sign-in{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px
+}
+#final-sign-in a{
+    color: #fff;
+    font-size: 50px;
+    border: 3px solid #ddd;
+    border-radius: 50%;
+    padding: 30px;
+    transition: transform 0.2s ease-in-out;
+    background-color:#4B0082;
+}
+#final-sign-in a:hover{
+    text-decoration: none;
+    font-size: 1;
+    transform: scale(1.03);
+}
+
+/*create.html*/
+body.create{
+    background-image: url('../FEDAssg2/Images/signinpage-background.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    overflow:hidden;
+}
+#create-header{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+#create-header h1{
+    font-size: 70px;
+}
+.create-control{
+    margin-top: 30px;
+    width: 400px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+#final-create{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px
+}
+#final-create a{
+    color: #fff;
+    font-size: 50px;
+    border: 3px solid #ddd;
+    border-radius: 50%;
+    padding: 30px;
+    transition: transform 0.2s ease-in-out;
+    background-color:#4B0082;
+}
+#final-create a:hover{
+    text-decoration: none;
+    font-size: 1;
+    transform: scale(1.03);
+}
+/*shop.html*/
+body.shop-html{
+    background-image: url('../FEDAssg2/Images/pngtree-cartoon-space-landscape-comic-planet-picture-image_1823156.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+#shop-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#shop-header h1{
+    color: #fff;
+    font-size: 80px;
+    padding-bottom: 50px;
+}
+.shop-items{
+    margin-right: 50px;
+    margin-left: 50px;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    border:2px solid #fff;
+    border-radius: 75px;
+    background-color: #fff;
+}
+.shop-item{
+    margin-bottom: 50px;
+    margin-left: 230px;
+}
+.shop-item h3{
+    color: #000;
+}
+.shop-item img{
+    width: 150px;
+    height: 200px;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+#shop-item2 img{
+    width: 200px;
+    margin-left: 80px;
+}
+#shop-item3{
+    margin-left: 250px;
+}
+#shop-item3 img{
+    width: 200px;
+    margin-left: 50px;
+}
+#popup1 h1{
+    font-size: 30px;
+}
+#popup1 img{
+    margin-bottom: 50px;
+    width: 200px;
+}
+#popup2 h1{
+    font-size: 30px;
+}
+#popup2 img{
+    margin-bottom: 50px;
+    width: 200px;
+}
+#popup3 h1{
+    font-size: 30px;
+}
+#popup3 img{
+    margin-bottom: 50px;
+    width: 200px;
+}
+#popup4 h1{
+    font-size: 30px;
+}
+#popup4 img{
+    margin-bottom: 50px;
+    width: 200px;
+}
+#shop-item4{
+    margin-left: 280px;
+}
+#lottiebg{
+    justify-content: center;
+    align-items: center;
+    padding-left: 625px;
+    padding-top: 220px;
+}
+
+
+@media only screen and (max-width: 767px) {
+    /* Styles for phones */
+    /*game.html*/
+    .game {
+        overflow: hidden;
+    }
+
+    .img-fluid{
+        width: 65vw;
+        height: 25vh;
+    }
+
+    #submit-btn {
+        margin-top: 20px;
+        margin-left: 145px;
+    }
+
+    .form-control-sm {
+        width: 80%;
+        margin-left: 45px;
+    }
+    .popup{
+        font-size: 7px;
+    }
+    #streak-id{
+        font-size: 25px;
+        margin-top: 50px;
+        margin-right: 10px;
+        margin-left: 10px;
+        -webkit-text-stroke: black;
+        -webkit-text-stroke-width:1;
+    }
+    .inner-popup p{
+        font-size: 15px;
+    }
+    .inner-popup p:hover{
+        font-size: 20px;
+    }
+    .inner-popup a{
+        font-size: 12px;
+    }
+    .inner-popup a:hover{
+        font-size: 16px;
+    }
+    /*homepage.html*/
+    #index-title h1{
+        margin-top: 40px;
+        font-size: 40px;
+    }
+    .index-buttons{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 15px;
+    }
+    .scrollable-container {
+        height: 250px;
+        width: 80vw;
+    }
+    .scroll-content h1{
+        margin-right: 15px;
+    }
+    #play-now a{
+        font-size: 45px;
+        transition: font-size 0.2s ease-in;
+    }
+    #play-now a:hover{
+        font-size: 55px;
+    }
+    /*leaderboard.html*/
+    .back-button{
+        padding-left: 40px;
+        padding-top: 30px;
+    }
+
+    /*index.html*/
+    #signin-buttons{
+        margin-left: 5vw;
+        margin-top: 3vh;
+    }
+    .signin-control{
+        width: 350px;
+    }
+    #signin-header{
+        margin-top: 130x;
+    }
+    #signin-header h1{
+        font-size: 40px;
+    }
+    #create-account{
+        padding-right: 220px;
+    }
+    #final-sign-in{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+    }
+    #final-sign-in a{
+        font-size: 40px;
+    }
+
+    /*create.html*/
+    body.shop-html{
+        height: 220vh;
+    }
+    #create-header{
+        margin-top: 70px;
+    }
+    #create-header h1{
+        text-align: center;
+        font-size: 30px;
+    }
+    .create-control{
+        margin-top: 20px;
+        width: 350px;
+    }
+    #final-create{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+    }
+    #final-create a{
+        font-size: 40px;
+    }
+    
+    /*shop.html*/
+    #shop-header h1{
+        font-size: 40px;
+    }
+    .shop-items{
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+    #shop-item1 img{
+        width: 150px;
+        height: 200px;
+        margin-left: 50px;
+    }
+    #shop-item2 img{
+        width: 200px;
+        margin-left: 30px;
+    }
+    #shop-item3 img{
+        width: 200px;
+        margin-left: 20px;
+    }
+    #shop-item4 img{
+        margin-left: 49px;
+    }
+    #popup1 h1{
+        font-size: 30px;
+    }
+    #popup1 a{
+        font-size: 15px;
+    }
+    #popup1 img{
+        margin-bottom: 50px;
+        width: 200px;
+    }
+    #popup2 h1{
+        font-size: 30px;
+    }
+    #popup2 img{
+        margin-bottom: 50px;
+        width: 200px;
+    }
+    #popup2 a{
+        font-size: 15px;
+    }
+    #popup3 h1{
+        font-size: 30px;
+    }
+    #popup3 img{
+        margin-bottom: 50px;
+        width: 200px;
+    }
+    #popup3 a{
+        font-size: 15px;
+    }
+    #popup4 h1{
+        font-size: 30px;
+    }
+    #popup4 img{
+        margin-bottom: 50px;
+        width: 200px;
+    }
+    #popup4 a{
+        font-size: 15px;
+    }
+    #shop-item1{
+        margin-left: 60px;
+    }
+    #shop-item1 h3{
+        font-size: 20px;
+    }
+    #shop-item2{
+        margin-left: 60px;
+    }
+    #shop-item2 h3{
+        font-size: 20px;
+    }
+    #shop-item3{
+        margin-left: 70px;
+    }
+    #shop-item3 h3{
+        font-size: 20px;
+    }
+    #shop-item4{
+        margin-left: 60px;
+    }
+    #shop-item4 h3{
+        font-size: 20px;
+    }
+    .index-buttons h2{
+        padding-top: 15px;
+        font-size: 20px;
+    }
+    /*lottie*/
+    #lottiebg{
+        padding-left: 50px;
+        padding-top: 200px;
+    }
+}
