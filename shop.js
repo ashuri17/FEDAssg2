@@ -92,7 +92,6 @@ function checkout(){
         }
     })
     .then ((data) =>{
-        console.log(data);
         window.location.href = "shop.html";
     });
 }

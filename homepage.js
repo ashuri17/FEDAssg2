@@ -27,7 +27,6 @@ function getLeaderboard(){
         }
     })
     .then ((data) =>{
-        console.log(data);
         for (var i = 0; i < data.length;i++){
             let userName = data[i].userName;
             let highestStreak = data[i].highestStreak;
