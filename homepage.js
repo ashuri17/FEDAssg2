@@ -1,4 +1,4 @@
-const APIKEY = "65bf3321b4ef994fc436669e";
+const APIKEY = "65c462bccca7362a2c653d5c";
 
 document.addEventListener("DOMContentLoaded",function(){
     var userName = localStorage.getItem("userNameKey");
@@ -17,7 +17,7 @@ function getLeaderboard(){
             "Cache-Control": "no-cache"    
         },
     }
-    fetch("https://fedassg2-7a05.restdb.io/rest/user-fed",settings)
+    fetch("https://fedass2-63de.restdb.io/rest/user-info",settings)
     .then((response)=>{
         if (!response.ok){
             throw new Error("Something went wrong...");
@@ -33,7 +33,6 @@ function getLeaderboard(){
             let highestStreak = data[i].highestStreak;
             usernameHighestStreak[userName] = highestStreak;
         }
-        console.log(usernameHighestStreak)
         miniLeaderboard();
     })
 }
@@ -51,7 +50,7 @@ function redirectToPlayPage() {
     if (window.location.pathname.endsWith('loading.html')) { 
         setTimeout(function() { 
             window.location.href = 'game.html'; 
-        }, 4000); 
+        }, 5000); 
     } 
 } 
 redirectToPlayPage();

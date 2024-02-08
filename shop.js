@@ -1,4 +1,4 @@
-const APIKEY = "65bf3321b4ef994fc436669e";	
+const APIKEY = "65c462bccca7362a2c653d5c";	
 let totalScore;
 let userID;
 let playerName = localStorage.getItem("userNameKey"); //grab the player name from local storage
@@ -47,7 +47,7 @@ function getPlayer(){
             "Cache-Control": "no-cache"
         },
     }
-    fetch(`https://fedassg2-7a05.restdb.io/rest/user-fed?q={"userName":"${playerName}"}`,settings)
+    fetch(`https://fedass2-63de.restdb.io/rest/user-info?q={"userName":"${playerName}"}`,settings)
     .then((response)=>{
         if (!response.ok){
             throw new Error("Something went wrong...");
@@ -82,7 +82,7 @@ function checkout(){
         },
         body: JSON.stringify(playerData)
     }
-    fetch(`https://fedassg2-7a05.restdb.io/rest/user-fed/${userID}`,settings)
+    fetch(`https://fedass2-63de.restdb.io/rest/user-info/${userID}`,settings)
     .then((response)=>{
         if (!response.ok){
             throw new Error("Something went wrong...");
@@ -93,6 +93,7 @@ function checkout(){
     })
     .then ((data) =>{
         console.log(data);
+        window.location.href = "shop.html";
     })
 }
 getPlayer();

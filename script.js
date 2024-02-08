@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded",(event) => {
     console.log("Document has fired up!");
 })
-const APIKEY = "65bf3321b4ef994fc436669e";	
+const APIKEY = "65c462bccca7362a2c653d5c";	
 const countryFlags = {}
 let answer;                         
 let highestStreak;                  
@@ -59,15 +59,16 @@ function checkName(){
         randomCountry();
         gameStreak++;
         dailyScore += 10
+        let today = new Date()
+        var year = today.getFullYear();
+        console.log(year);
+        var month = ('0' + (today.getMonth()+1)).slice(-2);
+        console.log(month);
+        var days = ('0' + today.getDate()).slice(-2);
+        userDate = month + '/' + days + '/' + year;
+
         if(dailyScore >= 100){
             dailyScore = 100;
-            let today = new Date()
-            var year = today.getFullYear();
-            console.log(year);
-            var month = ('0' + (today.getMonth()+1)).slice(-2);
-            console.log(month);
-            var days = ('0' + today.getDate()).slice(-2);
-            userDate = month + '/' + days + '/' + year;
         }
 
     }
@@ -106,7 +107,7 @@ function getPlayer(){
             "Cache-Control": "no-cache"
         },
     }
-    fetch(`https://fedassg2-7a05.restdb.io/rest/user-fed?q={"userName":"${playerName}"}`,settings)
+    fetch(`https://fedass2-63de.restdb.io/rest/user-info?q={"userName":"${playerName}"}`,settings)
     .then((response)=>{
         if (!response.ok){
             throw new Error("Something went wrong...");
@@ -152,7 +153,7 @@ function updatePlayer(){
         },
         body: JSON.stringify(playerData)
     }
-    fetch(`https://fedassg2-7a05.restdb.io/rest/user-fed/${userID}`,settings)
+    fetch(`https://fedass2-63de.restdb.io/rest/user-info/${userID}`,settings)
     .then((response)=>{
         if (!response.ok){
             throw new Error("Something went wrong...");
@@ -163,6 +164,11 @@ function updatePlayer(){
     })
     .then ((data) =>{
         console.log(data);
+        alert("Player data has been updated!");
+        let lostButtons = document.getElementsByClassName("lost-button");
+        for (let i = 0; i < lostButtons.length; i++){
+            lostButtons[i].style.pointerEvents = "auto";
+        }
     })
 }
 createFlags();
