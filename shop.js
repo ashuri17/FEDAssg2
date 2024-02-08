@@ -57,6 +57,7 @@ function getPlayer(){
         }
     })
     .then ((data) =>{
+        userID = data[0]._id;
         totalScore = data[0].totalScore;
         document.getElementById("userTotalScore").textContent = totalScore;
     })
