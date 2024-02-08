@@ -17,13 +17,15 @@ document.addEventListener("DOMContentLoaded", function () {
                     break;
                 }
             }
+            // username and password match with user object in RestDB
             if (isValid) {
                 alert("Logged in succesfully!");
                 localStorage.setItem("userNameKey",attemptUsername);
                 window.location.href = "homepage.html";
             } 
             else {
-                alert("Invalid credentials!")
+                alert("Invalid credentials!");
+                //clear the input boxes
                 document.getElementById("sign-username").value = "";
                 document.getElementById("sign-password").value = "";
 
@@ -38,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     "x-apikey": APIKEY,
                     "Cache-Control": "no-cache"
                 }
-            }
+            };
             fetch("https://fedass2-63de.restdb.io/rest/user-info", settings)
                 .then((response) => {
                     if (!response.ok) {
@@ -59,5 +61,5 @@ document.addEventListener("DOMContentLoaded", function () {
                     console.error("Error:", error);
                 });
         }
-    })
+    });
 });

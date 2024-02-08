@@ -1,13 +1,13 @@
 const APIKEY = "65c462bccca7362a2c653d5c";
 
-document.addEventListener("DOMContentLoaded",function(){
+document.addEventListener("DOMContentLoaded",function() {
     var userName = localStorage.getItem("userNameKey");
     console.log(userName);
     document.getElementById("display-username").textContent = userName;
-    usernameHighestStreak = {};
+    let usernameHighestStreak = {};
     getLeaderboard();
 
-})
+});
 function getLeaderboard(){
     let settings = {
         method: "GET",
@@ -16,7 +16,7 @@ function getLeaderboard(){
             "x-apikey": APIKEY,
             "Cache-Control": "no-cache"    
         },
-    }
+    };
     fetch("https://fedass2-63de.restdb.io/rest/user-info",settings)
     .then((response)=>{
         if (!response.ok){
@@ -29,12 +29,12 @@ function getLeaderboard(){
     .then ((data) =>{
         console.log(data);
         for (var i = 0; i < data.length;i++){
-            let userName = data[i].userName
+            let userName = data[i].userName;
             let highestStreak = data[i].highestStreak;
             usernameHighestStreak[userName] = highestStreak;
         }
         miniLeaderboard();
-    })
+    });
 }
 function miniLeaderboard(limit = 3){
     let row = "";
