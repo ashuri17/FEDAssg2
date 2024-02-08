@@ -1,26 +1,8 @@
+const APIKEY = "65c42c7286354f09ac464716";
 document.addEventListener("DOMContentLoaded",function(){
-    const APIKEY = "65bf3321b4ef994fc436669e";
-    var weeklyDate = new Date("Feb 3,2024,23:36:20");
 
-
-    var x = setInterval(function(){
-    var d = new Date().getTime();
-    var distance = weeklyDate - d;
-    if (distance < 1000){
-        weeklyDate.setDate(weeklyDate.getDate()+ 7);
-        distance = weeklyDate - d;
-    }
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-    document.getElementById("countDown").textContent = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-
-},1000)
 leaderboardRows = {};
-
-
+userNameID = {};
 createLeaderboard();
 function createLeaderboard(){
     let settings = {
@@ -31,7 +13,7 @@ function createLeaderboard(){
             "Cache-Control": "no-cache"    
         },
     }
-    fetch("https://fedassg2-7a05.restdb.io/rest/user-fed",settings)
+    fetch("https://fedass2-0db0.restdb.io/rest/user-info",settings)
     .then((response)=>{
         if (!response.ok){
             throw new Error("Something went wrong...");
@@ -44,12 +26,15 @@ function createLeaderboard(){
         for (var i = 0; i < data.length;i++){
             let userName = data[i].userName
             let highestStreak = data[i].highestStreak;
+            let userID = data[i]._id;
             leaderboardRows[userName] = highestStreak;
+            userNameID[userName] = userID;
         }
+        console.log(leaderboardRows);
         getLeaderboard();
-
     })
 }
+
 function getLeaderboard(limit = 20, all = true){
     let rows = "";
     let sortedUsernames = Object.keys(leaderboardRows).sort((a, b) => leaderboardRows[b] - leaderboardRows[a]);
@@ -63,5 +48,6 @@ function getLeaderboard(limit = 20, all = true){
     }
     document.getElementById("leaderboard-content").getElementsByTagName("tbody")[0].innerHTML = rows;
 }
+
 })
 

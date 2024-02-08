@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded",function(){
-    const APIKEY = "65bf3321b4ef994fc436669e"
+    const APIKEY = "65c42c7286354f09ac464716"
     document.getElementById("final-create").addEventListener("click", function(e){
         e.preventDefault();
         let userName = document.getElementById("create-username").value;
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded",function(){
                 },
                 body: JSON.stringify(userData),
             }
-            fetch("https://fedassg2-7a05.restdb.io/rest/user-fed",settings)
+            fetch("https://fedass2-0db0.restdb.io/rest/user-info",settings)
             .then((response)=>{
                 if (!response.ok){
                     alert("Username has been taken!");

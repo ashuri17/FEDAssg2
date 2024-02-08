@@ -89,8 +89,9 @@ body.game{
     text-align:center;
     flex-wrap:wrap;
 }
-.inner-popup a{
+.lost-button{
     color: #3498db;
+    pointer-events: none;
 }
 .inner-popup a:hover{
     text-decoration: none;
@@ -116,11 +117,53 @@ body.game{
     height:100%;
     transition: opacity 0.5s ease;
 }
+#faded-bg2{
+    display:none;
+    opacity:0.6;
+    background-color:black;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    z-index:2;
+    height:100%;
+    transition: opacity 0.5s ease;
+}
+#faded-bg3{
+    display:none;
+    opacity:0.6;
+    background-color:black;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    z-index:2;
+    height:100%;
+    transition: opacity 0.5s ease;
+}
+#faded-bg4{
+    display:none;
+    opacity:0.6;
+    background-color:black;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    z-index:2;
+    height:100%;
+    transition: opacity 0.5s ease;
+}
 
 
 
 
-/*index.html css (most of it)*/
+/*homepage.html css (most of it)*/
 
 body.index{
     background-image: url('../Images/adventure-time-cartoon-earth-digital-wallpaper.jpg');
@@ -138,6 +181,9 @@ body.index{
     padding-right: 100px;
     padding-top: 50px;
 }
+.index-buttons h2{
+    color:#fff;
+}
 .index-buttons a{
     padding: 12px 20px;
     border-radius: 25px;
@@ -145,6 +191,7 @@ body.index{
     background: linear-gradient(to bottom, #4B0082, #800080);
     text-decoration: none;
     transition: transform 0.2s ease-in-out;
+    border: 2px solid #fff;
 }
 .index-buttons a:hover{
     text-decoration: none;
@@ -183,7 +230,7 @@ a.scrollable-container :hover{
 .scroll-content {
     overflow-y: scroll;
     height: calc(100% + 17px); /* Offset the scrollbar width */
-    margin-right: -17px; /* Offset the scrollbar width */
+    margin-right: -17px; /* Offset the scrollbar width*/
 }
 
 .scroll-content::-webkit-scrollbar {
@@ -195,13 +242,14 @@ a.scrollable-container :hover{
 }
 
 .scroll-content h1{
+    text-align:center;
     margin-top: 25px;
     color:#fff;
 }
 .scroll-content h2{
     color: #fff;
-    margin-top: 15px    ;
-    margin-left: auto;
+    margin-top: 15px;
+    text-align:center;
 }
 #play-now{
     display: flex;
@@ -257,8 +305,34 @@ a.scrollable-container :hover{
     margin: 0;
     overflow:hidden;
  }
+ .back-button{
+    padding-left: 100px;
+    padding-top: 50px;
+}
+.back-button a{
+    padding: 12px 20px;
+    border-radius: 25px;
+    color: #fff;
+    background: linear-gradient(to bottom, #4B0082, #800080);
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out;
+    border: 2px solid #fff;
+}
+.back-button a:hover{
+    text-decoration: none;
+    color: #fff;
+    transform: scale(1.1)
+}
 
- /*signin.html*/
+ /*index.html*/
+
+ #signin-border {
+    width: 600px;
+    margin: 50px auto; /* Adjust margin based on your layout */
+    padding: 20px;
+    border: 2px solid #ccc; /* Border color */
+    border-radius: 20%; /* Optional: Rounded corners */
+  }
  body.signin{
     background-image: url('../Images/signinpage-background.jpg');
     background-size: cover;
@@ -290,7 +364,7 @@ a.scrollable-container :hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 130px;
+    margin-top: 100px;
 }
 #signin-header h1{
     font-size: 80px;
@@ -379,7 +453,96 @@ body.create{
     font-size: 1;
     transform: scale(1.03);
 }
-
+/*shop.html*/
+body.shop-html{
+    background-image: url('../Images/pngtree-cartoon-space-landscape-comic-planet-picture-image_1823156.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+#shop-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#shop-header h1{
+    color: #fff;
+    font-size: 80px;
+    padding-bottom: 50px;
+}
+.shop-items{
+    margin-right: 50px;
+    margin-left: 50px;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    border:2px solid #fff;
+    border-radius: 75px;
+    background-color: #fff;
+}
+.shop-item{
+    margin-bottom: 50px;
+    margin-left: 230px;
+}
+.shop-item h3{
+    color: #000;
+}
+.shop-item img{
+    width: 150px;
+    height: 200px;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+#shop-item2 img{
+    width: 200px;
+    margin-left: 80px;
+}
+#shop-item3{
+    margin-left: 250px;
+}
+#shop-item3 img{
+    width: 200px;
+    margin-left: 50px;
+}
+#popup1 h1{
+    font-size: 30px;
+}
+#popup1 img{
+    margin-bottom: 50px;
+    width: 200px;
+}
+#popup2 h1{
+    font-size: 30px;
+}
+#popup2 img{
+    margin-bottom: 50px;
+    width: 200px;
+}
+#popup3 h1{
+    font-size: 30px;
+}
+#popup3 img{
+    margin-bottom: 50px;
+    width: 200px;
+}
+#popup4 h1{
+    font-size: 30px;
+}
+#popup4 img{
+    margin-bottom: 50px;
+    width: 200px;
+}
+#shop-item4{
+    margin-left: 280px;
+}
+#lottiebg{
+    justify-content: center;
+    align-items: center;
+    padding-left: 625px;
+    padding-top: 220px;
+}
 
 
 @media only screen and (max-width: 767px) {
@@ -414,9 +577,17 @@ body.create{
         -webkit-text-stroke: black;
         -webkit-text-stroke-width:1;
     }
+    .inner-popup p{
+        font-size: 15px;
+    }
 
-
-    /*index.html*/
+    .inner-popup a{
+        font-size: 12px;
+    }
+    .inner-popup a:hover{
+        font-size: 16px;
+    }
+    /*homepage.html*/
     #index-title h1{
         margin-top: 40px;
         font-size: 40px;
@@ -432,5 +603,174 @@ body.create{
         height: 250px;
         width: 80vw;
     }
+    .scroll-content h1{
+        margin-right: 15px;
+        font-size: 30px;
+    }
+    .scroll-content h2{
+        margin-right: 15px;
+        font-size: 25px;
+    }
+    #play-now a{
+        font-size: 45px;
+        transition: font-size 0.2s ease-in;
+    }
+    #play-now a:hover{
+        font-size: 55px;
+    }
+    /*leaderboard.html*/
+    .back-button{
+        padding-left: 40px;
+        padding-top: 30px;
+    }
 
+    /*index.html*/
+    #signin-buttons{
+        margin-left: 5vw;
+        margin-top: 3vh;
+    }
+    .signin-control{
+        width: 350px;
+    }
+    #signin-header{
+        margin-top: 130x;
+    }
+    #signin-header h1{
+        font-size: 40px;
+    }
+    #create-account{
+        padding-right: 220px;
+    }
+    #final-sign-in{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+    }
+    #final-sign-in a{
+        font-size: 40px;
+    }
+
+    /*create.html*/
+    body.shop-html{
+        height: 220vh;
+    }
+    #create-header{
+        margin-top: 70px;
+    }
+    #create-header h1{
+        text-align: center;
+        font-size: 30px;
+    }
+    .create-control{
+        margin-top: 20px;
+        width: 350px;
+    }
+    #final-create{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+    }
+    #final-create a{
+        font-size: 40px;
+    }
+    
+    /*shop.html*/
+    #shop-header h1{
+        font-size: 40px;
+    }
+    .shop-items{
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+    #shop-item1 img{
+        width: 150px;
+        height: 200px;
+        margin-left: 50px;
+    }
+    #shop-item2 img{
+        width: 200px;
+        margin-left: 30px;
+    }
+    #shop-item3 img{
+        width: 200px;
+        margin-left: 20px;
+    }
+    #shop-item4 img{
+        margin-left: 49px;
+    }
+    #popup1 h1{
+        font-size: 30px;
+    }
+    #popup1 a{
+        font-size: 15px;
+    }
+    #popup1 img{
+        margin-bottom: 50px;
+        width: 200px;
+    }
+    #popup2 h1{
+        font-size: 30px;
+    }
+    #popup2 img{
+        margin-bottom: 50px;
+        width: 200px;
+    }
+    #popup2 a{
+        font-size: 15px;
+    }
+    #popup3 h1{
+        font-size: 30px;
+    }
+    #popup3 img{
+        margin-bottom: 50px;
+        width: 200px;
+    }
+    #popup3 a{
+        font-size: 15px;
+    }
+    #popup4 h1{
+        font-size: 30px;
+    }
+    #popup4 img{
+        margin-bottom: 50px;
+        width: 200px;
+    }
+    #popup4 a{
+        font-size: 15px;
+    }
+    #shop-item1{
+        margin-left: 60px;
+    }
+    #shop-item1 h3{
+        font-size: 20px;
+    }
+    #shop-item2{
+        margin-left: 60px;
+    }
+    #shop-item2 h3{
+        font-size: 20px;
+    }
+    #shop-item3{
+        margin-left: 70px;
+    }
+    #shop-item3 h3{
+        font-size: 20px;
+    }
+    #shop-item4{
+        margin-left: 60px;
+    }
+    #shop-item4 h3{
+        font-size: 20px;
+    }
+    .index-buttons h2{
+        padding-top: 15px;
+        font-size: 20px;
+    }
+    /*lottie*/
+    #lottiebg{
+        padding-left: 50px;
+        padding-top: 200px;
+    }
 }

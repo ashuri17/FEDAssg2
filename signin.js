@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const APIKEY = "65bf3321b4ef994fc436669e";
+    const APIKEY = "65c42c7286354f09ac464716";
     document.getElementById("final-sign-in").addEventListener("click", function (e) {
         e.preventDefault();
         let attemptUsername = document.getElementById("sign-username").value;
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     "Cache-Control": "no-cache"
                 }
             }
-            fetch("https://fedassg2-7a05.restdb.io/rest/user-fed", settings)
+            fetch("https://fedass2-0db0.restdb.io/rest/user-info", settings)
                 .then((response) => {
                     if (!response.ok) {
                         throw new Error("Something went wrong...");
