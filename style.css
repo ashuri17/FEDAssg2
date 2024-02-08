@@ -6,7 +6,7 @@ body {
     font-style: normal;
 }
 body.game{
-    background-image: url('../Images/gradient-galaxy-background-with-colorful-planets_23-2148999259.avif');
+    background-image: url('Images/gradient-galaxy-background-with-colorful-planets_23-2148999259.avif');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -166,7 +166,7 @@ body.game{
 /*homepage.html css (most of it)*/
 
 body.index{
-    background-image: url('../Images/adventure-time-cartoon-earth-digital-wallpaper.jpg');
+    background-image: url('Images/adventure-time-cartoon-earth-digital-wallpaper.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -297,7 +297,7 @@ a.scrollable-container :hover{
      color: #fff;
  }
  body.leaderboard-html{
-    background-image: url('../Images/gradient-galaxy-background-with-colorful-planets_23-2148999259.avif');
+    background-image: url('Images/gradient-galaxy-background-with-colorful-planets_23-2148999259.avif');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -334,7 +334,7 @@ a.scrollable-container :hover{
     border-radius: 20%; /* Optional: Rounded corners */
   }
  body.signin{
-    background-image: url('../Images/signinpage-background.jpg');
+    background-image: url('Images/signinpage-background.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -404,7 +404,7 @@ a.scrollable-container :hover{
 
 /*create.html*/
 body.create{
-    background-image: url('../Images/signinpage-background.jpg');
+    background-image: url('Images/signinpage-background.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -453,7 +453,7 @@ body.create{
 }
 /*shop.html*/
 body.shop-html{
-    background-image: url('../Images/pngtree-cartoon-space-landscape-comic-planet-picture-image_1823156.jpg');
+    background-image: url('Images/pngtree-cartoon-space-landscape-comic-planet-picture-image_1823156.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
