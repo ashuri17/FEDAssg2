@@ -57,7 +57,8 @@ A few interesting bugs that we discovered, and solved were
 A bug that we noticed and unsolved is
   - Desktop view causes website layout to be altered, can be fixed by zooming in to 125%
 
-
+## Walkthrough Video:
+[FED_GuessTheFlag_pitch.mp4](https://drive.google.com/file/d/1S_o2GqfeN_PG0pPL2KNBEQ2e7M5_-tTZ/view?usp=drive_link)
 
 ## Media used:
 - Background (homepage.html): [https://www.wallpaperflare.com/static/829/209/298/adventure-time-cartoon-earth-digital-wallpaper.jpg](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2Fssss--786300416179670440%2F&psig=AOvVaw3wa-zdhp0LIXMiiDVdCW5z&ust=1707367708092000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCPDxs8K2mIQDFQAAAAAdAAAAABAE)
