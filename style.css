@@ -575,8 +575,18 @@ body.shop-html{
         -webkit-text-stroke: black;
         -webkit-text-stroke-width:1;
     }
-
-
+    .inner-popup p{
+        font-size: 15px;
+    }
+    .inner-popup p:hover{
+        font-size: 20px;
+    }
+    .inner-popup a{
+        font-size: 12px;
+    }
+    .inner-popup a:hover{
+        font-size: 16px;
+    }
     /*homepage.html*/
     #index-title h1{
         margin-top: 40px;
@@ -755,6 +765,7 @@ body.shop-html{
     }
     /*lottie*/
     #lottiebg{
-        padding-left: 0;
+        padding-left: 50px;
+        padding-top: 200px;
     }
 }
