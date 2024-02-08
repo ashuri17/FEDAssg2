@@ -26,7 +26,7 @@ body.game{
     transition: background-color 0.3s;
     margin-left: 10px;
 }
-#streak-id{
+.streak-id{
     color: #fff;
     margin-top: 50px;
     margin-right: 250px;
@@ -399,7 +399,6 @@ a.scrollable-container :hover{
 }
 #final-sign-in a:hover{
     text-decoration: none;
-    font-size: 1;
     transform: scale(1.03);
 }
 
@@ -450,7 +449,6 @@ body.create{
 }
 #final-create a:hover{
     text-decoration: none;
-    font-size: 1;
     transform: scale(1.03);
 }
 /*shop.html*/
@@ -569,7 +567,7 @@ body.shop-html{
     .popup{
         font-size: 7px;
     }
-    #streak-id{
+    .streak-id{
         font-size: 25px;
         margin-top: 50px;
         margin-right: 10px;
@@ -633,7 +631,7 @@ body.shop-html{
         width: 350px;
     }
     #signin-header{
-        margin-top: 130x;
+        margin-top: 130px;
     }
     #signin-header h1{
         font-size: 40px;
